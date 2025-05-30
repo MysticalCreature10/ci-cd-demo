@@ -8,6 +8,7 @@ on:
 
 jobs:
   build:
+    name: Build and Audit Job # <-- Add this line!
     runs-on: ubuntu-latest
 
     steps:
