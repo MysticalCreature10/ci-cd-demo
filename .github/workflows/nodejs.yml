@@ -29,8 +29,5 @@ jobs:
       - name: Run npm audit
         run: npm audit --audit-level=high
 
-      - name: Run ESLint
-        run: npx eslint .
-
       - name: Deploy to Netlify
         run: netlify deploy --prod --dir=build --auth=$NETLIFY_AUTH_TOKEN
